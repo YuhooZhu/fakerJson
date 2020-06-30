@@ -15,25 +15,25 @@ mvn source:jar javadoc:jar install
 
 ### fakeEntityList
 ```
-	List<E> fakeEntityList = FakeFromEntity.fakeEntityList(E, size);
+List<E> fakeEntityList = FakeFromEntity.fakeEntityList(E, size);
 ```
 
 ### fakejsons
 ```
- List<Object> fakejsons = FakeFromEntity.fakejsons(E, 5);
+List<Object> fakejsons = FakeFromEntity.fakejsons(E, 5);
 ```
 
 ### fakeEntity
 ```
-		E fakeEntity = FakeFromEntity.fakeEntity(E);
+E fakeEntity = FakeFromEntity.fakeEntity(E);
 ```
 
 ### fakeDate
 ```
-		Date fakeDate = FakeData.fakeDate();
+Date fakeDate = FakeData.fakeDate();
 ```
 
 ### fakeName(CN)
 ```
-		String fakeName = FakeData.fakeName();
+String fakeName = FakeData.fakeName();
 ```
