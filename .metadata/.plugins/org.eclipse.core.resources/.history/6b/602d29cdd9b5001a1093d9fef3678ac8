@@ -1,9 +1,0 @@
-package cn.fakejson.fakejson;
-
-public class Fakejson {
-
-	public static void test()
-    {
-        System.out.println( "Hello World!" );
-    }
-}
