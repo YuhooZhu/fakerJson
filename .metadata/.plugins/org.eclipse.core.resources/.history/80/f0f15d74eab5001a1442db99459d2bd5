@@ -1,0 +1,13 @@
+package cn.fakejson.fakejson;
+
+import cn.fakejson.fakejson.util.JsonUtil;
+
+public class Fakejson {
+
+	public static <E> void testfakejson(E fake)
+    {
+        System.out.println(JsonUtil.toString(fake));
+        fake.getClass().getAnnotations();
+        System.out.println(JsonUtil.toString(fake.getClass().getAnnotations()));
+    }
+}

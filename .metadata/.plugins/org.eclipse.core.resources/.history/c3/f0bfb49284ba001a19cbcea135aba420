@@ -1,0 +1,13 @@
+package cn.fakejson.fakejson;
+
+import cn.fakejson.fakejson.util.RandomName;
+
+public class FakeData {
+	public static String fakeName() {
+		StringBuffer stringBuffer = new StringBuffer("");
+
+		RandomName name = new RandomName();
+		stringBuffer.append(name.getName());
+		return stringBuffer.toString();
+	}
+}

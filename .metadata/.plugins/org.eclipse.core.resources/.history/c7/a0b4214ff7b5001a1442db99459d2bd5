@@ -1,0 +1,30 @@
+package cn.fakejson.fakejson;
+
+public class FakeClass<E>{
+
+	private E entity;
+
+	private int size;
+
+	public E getEntity() {
+		return entity;
+	}
+
+	public void setEntity(E entity) {
+		this.entity = entity;
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+
+	public FakeClass(E entity, int size) {
+		super();
+		this.entity = entity;
+		this.size = size;
+	}
+}

@@ -1,0 +1,9 @@
+package cn.fakejson.fakejson;
+
+public class Fakejson<E> {
+
+	public static void testfakejson()
+    {
+        System.out.println( "Hello World!" );
+    }
+}

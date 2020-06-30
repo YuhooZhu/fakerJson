@@ -1,0 +1,24 @@
+package cn.fakejson.fakejson;
+
+import java.util.ArrayList;
+
+import cn.fakejson.fakejson.util.JsonUtil;
+
+public class Fakejson {
+
+	public static <E> void testfakejson(FakeClass<E> fake) {
+		ArrayList<E> list = new ArrayList<E>(fake.getSize());
+
+		System.out.println(JsonUtil.toString(fake.getEntity()));
+
+		System.out.println(JsonUtil.toString(fake.getSize()));
+
+		System.out.println(JsonUtil.toString(list.size()));
+
+		for (int i = 0; i < list.size(); i++) {
+			list.add(fake.getEntity());
+		}
+		
+		System.out.println(JsonUtil.toString(list));
+	}
+}

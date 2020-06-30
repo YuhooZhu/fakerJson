@@ -1,0 +1,14 @@
+package cn.fakejson.fakejson;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+public class Fakejson<E> {
+	
+    private E fake;
+
+	public static void testfakejson()
+    {
+        System.out.println( "Hello World!" );
+    }
+}

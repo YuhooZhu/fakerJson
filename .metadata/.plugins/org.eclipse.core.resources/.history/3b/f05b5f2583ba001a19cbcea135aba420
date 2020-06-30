@@ -1,0 +1,21 @@
+package cn.fakejson.fakejson;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Fakejson {
+
+	public static <E> List<E> fakejsons(E fake, int size) throws IllegalAccessException, InstantiationException {
+		List<E> list = new ArrayList<E>();
+
+		for (int i = 0; i < size; i++) {
+			FakeClass<E> fakeClass = new FakeClass<E>();
+			E eFake = fakeClass.createContents(fake.getClass());
+			fakeClass.setEntity(eFake);
+			fakeClass.setSeq(i);
+			list.add(fakeClass.getEntity());
+		}
+
+		return list;
+	}
+}

@@ -1,0 +1,24 @@
+package cn.fakejson.fakejson;
+
+public class FakeClass<E> implements Object{
+
+	private E entity;
+
+	private int size;
+
+	public E getEntity() {
+		return entity;
+	}
+
+	public void setEntity(E entity) {
+		this.entity = entity;
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+}
